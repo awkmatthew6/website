@@ -1,0 +1,520 @@
+/* IN ORDER CSS */
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+a  {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Work Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #364d59;
+  --color-primary: #feb900;
+  --color-secondary: #52565e;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  color: #444444;
+  /* background-color: rgb(216, 213, 213); */
+  font-family: Open Sans,Arial,sans-serif;
+  
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+a {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#top-bar {
+  background-color: rgb(0, 0, 0, 0.6);
+  margin-top: -15px;
+  padding: 10px;
+}
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #ffc451;
+}
+#header .logo a:hover {
+  color: #ffc451;
+}
+
+#header p {
+  white-space: nowrap;
+  font-size: 2em;
+}
+@media (max-width: 770px) {
+  #header p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 770px) {
+  #header p {
+    font-size: 2em;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
+
+/*--------------------------------------------------------------
+#  Get Startet Button
+--------------------------------------------------------------*/
+.get-started-btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 18px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+  position: relative;
+
+}
+
+.get-started-btn:hover {
+  background: #ffbb38;
+  color: #343a40;
+}
+@media (max-width: 1024px) {
+  .desktop-quote {
+    display: none;
+  }
+}
+/* min width means as soon as it hits the minimum width of 1024px this will execute (so when the screen is 1024px or less)*/
+
+@media (min-width: 1024px) {
+  .mobile-quote {
+    display: none;
+  }
+}
+
+/* min width means as soon as it hits the mAX width of 1024px this will execute (so when the screen is 1024px or wider)*/
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 25px;
+    font-size: 0.7em;
+    
+
+  }
+}
+
+.get-started-btna {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 18px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+  background-color: black;
+    box-shadow: rgba(149, 157, 165, 1) 0px 0px 24px;
+    margin-top: 15px;
+  
+}
+
+.get-started-btna:hover {
+  background: #ffbb38;
+  color: #343a40;
+  
+}
+
+@media (max-width: 992px) {
+  .get-started-btna {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #heroabc {
+    font-size: inherit;
+    padding-bottom: 13.5em;
+    padding-top: 7.5em;
+    position: relative;
+    z-index: 1;
+  }
+  #heroabc:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .65;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  #heroabc picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+  }
+  #heroabc picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #heroabc .hero-content {
+    width: 96%;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  #heroabc .hero-content {
+    padding: 0;
+  }
+  #heroabc .heroText {
+    width: 100%;
+    margin: auto;
+  }
+  #heroabc h1 {
+    font-weight: bold;
+    font-size: min(11vw, 3.2em);
+    color: #fff;
+    text-align: center;
+    line-height: 1.203125;
+    margin-right: auto;
+    width: 100%;
+    max-width: 14.21875em;
+    margin-bottom: 1.4375em;
+    position: relative;
+    
+  }
+  #heroabc h1:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.0625em;
+    width: 1.515625em;
+    background: #ffc451;
+    opacity: 1;
+    bottom: -0.25em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #heroabc p {
+    font-size: 1em;
+    line-height: 1.55em;
+    margin: auto;
+    margin-bottom: 1.55em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    max-width: 30.85em;
+    opacity: 1;
+  }
+  #heroabc .button-solid {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+  }
+  #heroabc .call-now {
+    height: 2.94444444em;
+    width: 9.11111111em;
+    font-size: 0.9em;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+  }
+  #heroabc .call-now img {
+    display: inline-block;
+    width: 1.16666667em;
+    height: 1.16666667em;
+  }
+  #heroabc .call-now span {
+    display: block;
+  }
+  #heroabc .call-now .text {
+    font-size: 0.6em;
+    line-height: 1.16666667;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+  #heroabc .call-now .number {
+    font-weight: bold;
+    line-height: 1.16666667;
+    font-size: 1em;
+  }
+  #heroabc .business-casual {
+    display: none;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #heroabc {
+    /* padding: 6.15em 0 11.45em 0; */
+    z-index: 1;
+    overflow: hidden;
+  }
+  #heroabc .hero-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #heroabc .business-casual {
+    display: block;
+    width: 17.5em;
+    position: absolute;
+    right: 0;
+    top: -3.5em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #heroabc {
+    /* padding-top: 13.65em; */
+    /* padding-bottom: 15.35em; */
+    /* Loads when screeen is biggest */
+    background: url("./assets/img/background/epoxy-img-1-.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #heroabc picture {
+    display: none;
+  }
+}
+#heroabc {
+   position: relative; 
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+      color: white;
+}
+#heroabc .container {
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+}
+
+#heroabc h1 span {
+  color: #ffc451;
+  
+}
+#heroabc h2 {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  
+}
+
+#heroabc .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100%;
+  text-align: center;
+}
+#heroabc .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: #ffc451;
+}
+#heroabc .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+  
+}
+#header-icon-box {
+  margin-top: 20px;
+
+}
+#heroabc .icon-box:hover {
+  border-color: #ffc451;
+}
+
+@media (max-width: 568px) {
+
+  #heroabc h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#sale:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+@media (min-width: 770px) {
+#sale {
+  background-color: rgb(0, 0, 0, 0.4);
+  font-size: 3rem;
+  bottom: 50px;
+  position: relative;
+  width: 60%;
+  left: 20%;
+}
+}
+/*-- -------------------------- -->
+<---          HERO END          -->
+<--- -------------------------- -*/
+
+/*-- -------------------------- -->
+<---          GET A QUOTE          -->
+<--- -------------------------- -*/
+.get-a-quote {
+  background: #ffc451;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  color: rgb(37, 27, 27);
+  font-weight: 700;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.get-a-quote:hover {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+
+/*-- -------------------------- -->
+<---     Overlap Hero Img Img   -->
+<--- -------------------------- -*/
+.onee-start {
+  z-index: 750;
+  opacity: 1;
+  position: absolute;
+  margin-top: -500px;
+  height: 500px;
+  background-color: white !important;;
+  clip-path: polygon(56% 84%, 0% 100%, 100% 100%);
+  width: 100%;
+  padding-top: 501px;
+}
+
+
+
+/*--------------------------------------------------------------
+# TOP SECTION
+--------------------------------------------------------------*/
+.top-section {
+  margin-top: 130px;
+  /* margin-bottom: 130px; */
+  
+}
+.top-section h6 {
+  font-family: Roboto Condensed;
+  font-weight: 500;
+   letter-spacing: 7px;
+   font-size: 1rem;
+}
+.top-section h2 {
+   letter-spacing: 8px;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  margin-bottom: 35px;
+  font-size: 2.3rem;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+.top-section h2 span{
+  border-bottom: 3px solid #ffc451;
+  border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+.top-section h5 {
+   letter-spacing: 3px;
+  font-family: Roboto Condensed;
+  /* margin-top: 15px; */
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+.top-section p {
+  padding-top: 20px;
+  letter-spacing: 2px;
+  /* font-family: 'lato'; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: 600; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 34px;
+  color: black;
+}
+/*--------------------------------------------------------------
+# Quote Button First Paragraph 
+--------------------------------------------------------------*/
